@@ -1,11 +1,18 @@
 import Hero from "./components/Hero"
+import NavBar from "./components/NavBar"
 
 const App = () => {
   return (
-    <div>
-      <h2 className="text-lg font-bold">App</h2>
-      <Hero />
-    </div>
+    <>
+      <NavBar />
+      <Hero title='Test tile' subtitle='This is the subtitle' />
+
+      <section>
+        <div className="container">
+          <h2>Home Cards</h2>
+        </div>
+      </section>
+    </>
   )
 }
 
