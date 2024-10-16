@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import JobListing from '.../components/JobListing';
-import Spinner from './Spinner';
+import JobListing from '../components/JobListing';
+import Spinner from '../components/Spinner';
 
 
 const JobListings = ({ isHome = false }) => {
