@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import JobListing from '../components/JobListing';
 import Spinner from '../components/Spinner';
 
@@ -9,10 +10,11 @@ const JobListings = ({ isHome = false }) => {
 
     useEffect(() => {
         const fetchJobs = async () => {
-            const apiUrl = isHome ? '/api/jobs?_limit=3' : '/api/jobs';
+            const apiUrl = isHome ? 'http://localhost:5000/jobs?_limit=3' : 'http://localhost:5000/jobs';
             try {
                 const res = await fetch(apiUrl);
                 const data = await res.json();
+                console.log("Fetched jobs:", data);
                 setJobs(data);
             } catch (error) {
                 console.log('Error fetching data', error);
@@ -22,7 +24,7 @@ const JobListings = ({ isHome = false }) => {
         };
 
         fetchJobs();
-    }, []);
+    }, [isHome]);
 
   return (
     <section className="bg-blue-50 px-4 py-10">
@@ -44,5 +46,9 @@ const JobListings = ({ isHome = false }) => {
     </section>
   )
 }
+
+JobListings.propTypes = {
+    isHome: PropTypes.bool,
+};
 
 export default JobListings
