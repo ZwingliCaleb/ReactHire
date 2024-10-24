@@ -52,6 +52,12 @@ Follow these steps to set up the project locally:
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone <repo-url>
 
-   cd 
+   cd Reacthire
+
+   npm install
+
+   npm run server
+
+   npm run dev
