@@ -54,10 +54,18 @@ Follow these steps to set up the project locally:
    ```bash
    git clone <repo-url>
 
+2. **change directory into project** :  
+    ```bash
    cd Reacthire
 
+3. **Install Dependencies** :
+    ```bash
    npm install
 
+4. **Start JSON Server for mock data** :
+    ```bash
    npm run server
 
+5. **In another terminal start React app** :
+    ```bash
    npm run dev
