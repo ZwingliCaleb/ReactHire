@@ -36,7 +36,7 @@ ReactHire is a job listing web application built with React and Vite. It allows 
 ## File Structure
 
 Here is the file structure of the project:
-
+```
 Reacthire/
 ├── node_modules/
 ├── public/
@@ -59,7 +59,7 @@ Reacthire/
 ├── README.md
 ├── tailwind.config.js
 └── vite.config.js
-
+```
 
 ## Setup Instructions/Installation
 
@@ -90,4 +90,10 @@ Follow these steps to set up the project locally:
 - **Navigate** through the app to view job postings.
 - **Read more**; click on the buttons to see full job descriptions.
 - **Filter**; this option helps you refine your job search.
+
+## Contributing
+Contributions to the project are welcome! If you have suggestions for improvements, found a bug, or want to add a new feature, please open an issue or submit a pull request. See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
 
