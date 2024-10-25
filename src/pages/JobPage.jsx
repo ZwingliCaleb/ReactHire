@@ -91,9 +91,10 @@ const JobPage = ({ deleteJob }) => {
 };
 
 const jobLoader = async ({ params }) => {
-    const res = await fetch(`/api/jobs/${params.id}`);
+    const { id } = params;
+    const res = await fetch(`https://reacthire-jobs-json.onrender.com/jobs/${id}`);
     if (!res.ok) {
-        throw new Error('Job not found');
+        throw new Error('Job not found',{status: 404});
     }
     const data = await res.json();
     return data;
